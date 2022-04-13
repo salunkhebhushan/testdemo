@@ -1,4 +1,5 @@
 // Define and assign a Markdown-it renderer.
+<script>
 let md;
 md = window.markdownit({html: true}).use(window.markdownitFootnote);
 // Load the Markdown file with jQuery.
@@ -12,3 +13,4 @@ $.ajax({
     $("#pageData").html(html);
   }
 });
+</script>
