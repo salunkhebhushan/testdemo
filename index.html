@@ -7,7 +7,7 @@
   <script>
     $(function() {
       
-      $.get("README.md", function(data) {
+      $.get("./README.md", function(data) {
         $('pageData').val(data)
         console.log(data); // this is not called !!
       });
