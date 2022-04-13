@@ -9,6 +9,7 @@ $.ajax({
     // Convert the Markdown to HTML.
     let html;
     html = md.render(markdown);
+    
     // Print the HTML to #content using jQuery.
     $("#pageData").html(html);
   }
