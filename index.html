@@ -8,7 +8,7 @@
     $(function() {
       
       $.get("./src/data/data.md", function(data) {
-        $('#pageData').val(data)
+        $('#pageData').html(data)
         console.log(data); // this is not called !!
       });
       console.log('end logging');
