@@ -4,7 +4,16 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" data-semver="2.2.0" data-require="jquery"></script>
-  <script src="./src/could-be.js"></script>
+  <script>
+    $(function() {
+      
+      $.get("./src/data/data", function(data) {
+        $('#pageData').html(data)
+        console.log(data); // this is not called !!
+      });
+      console.log('end logging');
+    });
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
